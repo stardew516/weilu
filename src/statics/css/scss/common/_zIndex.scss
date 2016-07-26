@@ -1,0 +1,12 @@
+//z-index管理
+$z-layers: (
+  "top": 999,
+  "middle": 500,
+  "default": 1,
+  "below": -500,
+  "bottom":  -999
+);
+
+@function z($layer){
+  @return map-get($z-layers,$layer);
+}

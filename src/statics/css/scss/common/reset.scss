@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul,li{
+  list-style: none;
+}
+.clearfix{
+  zoom: 1;
+  &::after{
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+  }
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}

@@ -1,0 +1,34 @@
+@import "common/variable", "common/reset", "common/zIndex", "common/mixin", "common/iconfont";
+$imgUrl: "../../css/img/";
+html {
+  font-size: 100px;
+}
+
+header{
+  padding: 20px;
+  background-color: #22C3AA;
+  .mask{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: #fff url("#{$imgUrl}/mask.jpg") no-repeat center -8px;
+  }
+  h1,h2,.name,.tag{
+    text-align: center;
+    color: #fff;
+  }
+  .name{
+    font-size: #{$fs2};
+  }
+  .tag{
+    font-size: #{$fs1};
+  }
+}
+.tag-left, .tag-right{
+  display: inline-block;
+}
+.tag-left li, .tag-right li{
+  float: left;
+}
